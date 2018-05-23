@@ -3,7 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2018
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HierarchicalData", "HierarchicalData\HierarchicalData.csproj", "{6E929430-38CC-4139-965F-09F98B4DED76}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HierarchicalData.Domain", "HierarchicalData.Domain\HierarchicalData.Domain.csproj", "{BB527296-BCDB-40BE-A5EA-AB0F6F10E169}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HierarchicalData.DAL", "HierarchicalData.DAL\HierarchicalData.DAL.csproj", "{144638F1-7C89-48E8-A933-639BB5C7EE59}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hierarchical.Tests", "Hierarchical.Tests\Hierarchical.Tests.csproj", "{174255B4-0127-432B-94E8-F7B41288FB7F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HierarchicalData.WebUI", "HierarchicalData.WebUI\HierarchicalData.WebUI.csproj", "{6E929430-38CC-4139-965F-09F98B4DED76}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hierarchical.Services", "Hierarchical.Services\Hierarchical.Services.csproj", "{37A0488E-7661-470F-9A1B-20E8A2D73712}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hierarchical.Contracts", "Hierarchical.Contracts\Hierarchical.Contracts.csproj", "{AD84C935-FA1E-4B50-9E56-0637B7EDAB4E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +21,30 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BB527296-BCDB-40BE-A5EA-AB0F6F10E169}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB527296-BCDB-40BE-A5EA-AB0F6F10E169}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB527296-BCDB-40BE-A5EA-AB0F6F10E169}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB527296-BCDB-40BE-A5EA-AB0F6F10E169}.Release|Any CPU.Build.0 = Release|Any CPU
+		{144638F1-7C89-48E8-A933-639BB5C7EE59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{144638F1-7C89-48E8-A933-639BB5C7EE59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{144638F1-7C89-48E8-A933-639BB5C7EE59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{144638F1-7C89-48E8-A933-639BB5C7EE59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{174255B4-0127-432B-94E8-F7B41288FB7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{174255B4-0127-432B-94E8-F7B41288FB7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{174255B4-0127-432B-94E8-F7B41288FB7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{174255B4-0127-432B-94E8-F7B41288FB7F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{6E929430-38CC-4139-965F-09F98B4DED76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6E929430-38CC-4139-965F-09F98B4DED76}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6E929430-38CC-4139-965F-09F98B4DED76}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6E929430-38CC-4139-965F-09F98B4DED76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37A0488E-7661-470F-9A1B-20E8A2D73712}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37A0488E-7661-470F-9A1B-20E8A2D73712}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37A0488E-7661-470F-9A1B-20E8A2D73712}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37A0488E-7661-470F-9A1B-20E8A2D73712}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD84C935-FA1E-4B50-9E56-0637B7EDAB4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD84C935-FA1E-4B50-9E56-0637B7EDAB4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD84C935-FA1E-4B50-9E56-0637B7EDAB4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD84C935-FA1E-4B50-9E56-0637B7EDAB4E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
