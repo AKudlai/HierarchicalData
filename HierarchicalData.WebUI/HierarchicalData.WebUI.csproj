@@ -112,15 +112,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\FoldersController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Infrastructure\NinjectRegistrations.cs" />
+    <Compile Include="Models\FolderViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
     <None Include="packages.config" />
+    <Content Include="Views\Folders\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -130,8 +133,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Hierarchical.Contracts\Hierarchical.Contracts.csproj">
@@ -141,6 +142,10 @@
     <ProjectReference Include="..\Hierarchical.Services\Hierarchical.Services.csproj">
       <Project>{37A0488E-7661-470F-9A1B-20E8A2D73712}</Project>
       <Name>Hierarchical.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HierarchicalData.Domain\HierarchicalData.Domain.csproj">
+      <Project>{BB527296-BCDB-40BE-A5EA-AB0F6F10E169}</Project>
+      <Name>HierarchicalData.Domain</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

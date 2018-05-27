@@ -49,17 +49,9 @@
   <ItemGroup>
     <Compile Include="DbInitializer.cs" />
     <Compile Include="HierarchicalDataContext.cs" />
-    <Compile Include="Migrations\201805222243373_InitalMigration.cs" />
-    <Compile Include="Migrations\201805222243373_InitalMigration.Designer.cs">
-      <DependentUpon>201805222243373_InitalMigration.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201805231358002_DbInitializer.cs" />
-    <Compile Include="Migrations\201805231358002_DbInitializer.Designer.cs">
-      <DependentUpon>201805231358002_DbInitializer.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201805231359182_DbInitializer1.cs" />
-    <Compile Include="Migrations\201805231359182_DbInitializer1.Designer.cs">
-      <DependentUpon>201805231359182_DbInitializer1.cs</DependentUpon>
+    <Compile Include="Migrations\201805231811501_InitialMigration.cs" />
+    <Compile Include="Migrations\201805231811501_InitialMigration.Designer.cs">
+      <DependentUpon>201805231811501_InitialMigration.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -75,14 +67,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201805222243373_InitalMigration.resx">
-      <DependentUpon>201805222243373_InitalMigration.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201805231358002_DbInitializer.resx">
-      <DependentUpon>201805231358002_DbInitializer.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201805231359182_DbInitializer1.resx">
-      <DependentUpon>201805231359182_DbInitializer1.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201805231811501_InitialMigration.resx">
+      <DependentUpon>201805231811501_InitialMigration.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -7,13 +7,13 @@ namespace HierarchicalData.DAL.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class DbInitializer : IMigrationMetadata
+    public sealed partial class InitialMigration : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(DbInitializer));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(InitialMigration));
         
         string IMigrationMetadata.Id
         {
-            get { return "201805231358002_DbInitializer"; }
+            get { return "201805231811501_InitialMigration"; }
         }
         
         string IMigrationMetadata.Source

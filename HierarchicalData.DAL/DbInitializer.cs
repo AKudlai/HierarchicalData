@@ -5,7 +5,7 @@
 
     using HierarchicalData.Domain;
 
-    public class DbInitializer : DropCreateDatabaseIfModelChanges<HierarchicalDataContext>
+    public class DbInitializer : DropCreateDatabaseAlways<HierarchicalDataContext>
     {
         protected override void Seed(HierarchicalDataContext context)
         {

@@ -5,14 +5,14 @@ namespace HierarchicalData.DAL.Migrations
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<HierarchicalData.DAL.HierarchicalDataContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<HierarchicalDataContext>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
         }
 
-        protected override void Seed(HierarchicalData.DAL.HierarchicalDataContext context)
+        protected override void Seed(HierarchicalDataContext context)
         {
             //  This method will be called after migrating to the latest version.
 
