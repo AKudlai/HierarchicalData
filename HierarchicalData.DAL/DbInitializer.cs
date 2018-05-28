@@ -13,42 +13,56 @@
                 new Folder
                     {
                         Name = "Creating Digital Images",
-                        Children = new List<Folder>
+                        URL = "Creating Digital Images/",
+                    Children = new List<Folder>
                                        {
                                            new Folder
                                                {
                                                    Name = "Resources",
+                                                   URL = "Creating Digital Images/Resources/",
                                                    Children =
                                                        new List<Folder>
                                                            {
                                                                new Folder
                                                                    {
-                                                                       Name
-                                                                           = "Primary Sources"
+                                                                       Name = "Primary Sources",
+                                                                       URL = "Creating Digital Images/Resources/Primary Sources/",
+                                                                       Children = new List<Folder>
+                                                                                      {
+                                                                                          new Folder
+                                                                                              {
+                                                                                                  Name = "Source 1",
+                                                                                                  URL = "Creating Digital Images/Resources/Primary Sources/Source 1/"
+                                                                                              }
+                                                                                      }
                                                                    },
                                                                new Folder
                                                                    {
                                                                        Name
-                                                                           = "Secondary Sources"
+                                                                           = "Secondary Sources",
+                                                                       URL = "Creating Digital Images/Resources/Secondary Sources/",
                                                                    }
                                                            }
                                                },
-                                           new Folder { Name = "Evidence" },
+                                           new Folder { Name = "Evidence", URL = "Creating Digital Images/Evidence/",  },
                                            new Folder
                                                {
                                                    Name = "Graphic Products",
+                                                   URL = "Creating Digital Images/Graphic Products/",
                                                    Children =
                                                        new List<Folder>
                                                            {
                                                                new Folder
                                                                    {
                                                                        Name
-                                                                           = "Process"
+                                                                           = "Process",
+                                                                       URL = "Creating Digital Images/Graphic Products/Process/",
                                                                    },
                                                                new Folder
                                                                    {
                                                                        Name
-                                                                           = "Final Product"
+                                                                           = "Final Product",
+                                                                       URL = "Creating Digital Images/Graphic Products/Final Product/"
                                                                    }
                                                            }
                                                }

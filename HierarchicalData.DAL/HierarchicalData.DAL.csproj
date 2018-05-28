@@ -53,6 +53,10 @@
     <Compile Include="Migrations\201805231811501_InitialMigration.Designer.cs">
       <DependentUpon>201805231811501_InitialMigration.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201805281659111_AddURL.cs" />
+    <Compile Include="Migrations\201805281659111_AddURL.Designer.cs">
+      <DependentUpon>201805281659111_AddURL.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -69,6 +73,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201805231811501_InitialMigration.resx">
       <DependentUpon>201805231811501_InitialMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805281659111_AddURL.resx">
+      <DependentUpon>201805281659111_AddURL.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

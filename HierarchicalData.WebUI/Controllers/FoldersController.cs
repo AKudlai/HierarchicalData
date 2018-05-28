@@ -13,7 +13,7 @@
     {
         private readonly IUnitOfWork unitOfWork;
 
-        private FolderViewModel folderView;
+        private readonly FolderViewModel folderView;
 
         public FoldersController(IUnitOfWork unitOfWork, FolderViewModel folderView)
         {
@@ -22,11 +22,11 @@
         }
 
         // GET: Tree
-        public ActionResult Index(int id = 1)
+        public ActionResult Index(string url)
         {
             IEnumerable<Folder> folders = this.unitOfWork.Folders.Find(f => true, f => f.Children);
-            this.folderView.CurrentFolder = folders.Where(f => f.Id == id).Select(f => f.Name).FirstOrDefault();
-            this.folderView.Children = folders.Where(f => f.ParentId == id);
+            this.folderView.CurrentFolder = folders.Where(f => f.URL == url).Select(f => f.Name).FirstOrDefault();
+            this.folderView.Children = folders.Where(f => f.Parent != null && f.Parent.URL == url);
             return this.View(this.folderView);
         }
     }

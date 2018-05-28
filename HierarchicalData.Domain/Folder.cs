@@ -10,6 +10,8 @@
 
         public string Name { get; set; }
 
+        public string URL { get; set; }
+
         public virtual Folder Parent { get; set; }
 
         public virtual ICollection<Folder> Children { get; set; }

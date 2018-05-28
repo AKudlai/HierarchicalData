@@ -9,5 +9,7 @@
         public string CurrentFolder { get; set; }
 
         public IEnumerable<Folder> Children { get; set; }
+
+        public string Url { get; set; }
     }
 }
