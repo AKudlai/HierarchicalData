@@ -8,13 +8,13 @@
     <title>title</title>
 </head>
 <body>
-<div>
-    <h2>Folder: @Model.CurrentFolder</h2>
-    @foreach (var f in Model.Children)
-    {
-        @Html.ActionLink(@f.Name, "Index", new { url = f.URL })<br>
-    }
-    @Model.Url
-</div>
+    <div>
+        <h2>Folder: @Model.CurrentFolder</h2>
+        @foreach (var f in Model.Children)
+        {
+            @Html.ActionLink(@f.Name, "Index", new { url = f.URL })<br>
+        }
+        Root folder: @Html.ActionLink(@Model.Root, "Index", new { url = @Model.Root })<br>
+    </div>
 </body>
 </html>

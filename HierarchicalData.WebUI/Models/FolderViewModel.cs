@@ -10,6 +10,6 @@
 
         public IEnumerable<Folder> Children { get; set; }
 
-        public string Url { get; set; }
+        public string Root { get; set; }
     }
 }

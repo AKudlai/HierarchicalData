@@ -12,7 +12,7 @@
             routes.MapRoute(
                 name: null,
                 url: "{*url}",
-                defaults: new { controller = "Folders", action = "Index"});
+                defaults: new { controller = "Folders", action = "Index" });
         }
     }
 }
